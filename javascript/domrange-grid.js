@@ -1,10 +1,5 @@
 Meteor.startup1(function () {
-	
-	
-	
-
-if (Meteor.isClient) {
-  Template.page.nodespec = function (fn) {
+Template.page.nodespec = function (fn) {
     var parts = [fn()];
     var replaceParts = function(regex, replacementFunc) {
       var newParts = [];
@@ -66,10 +61,6 @@ if (Meteor.isClient) {
   Template.page.spacer = function () {
     return new Handlebars.SafeString('<div class="spacer">&nbsp;</div>');
   };
-
-}
-
-	
 	
     var N = 10;
     var numColors = 6;
