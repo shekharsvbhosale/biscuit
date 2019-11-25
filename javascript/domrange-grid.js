@@ -1,14 +1,26 @@
-var N = 10;
-var numColors = 6;
-var colors = [];
-var guid = 1;
-if (Meteor.isClient) {
-  Meteor.startup(function () {
-    
+Meteor.startup1(function () {
+    var N = 10;
+    var numColors = 6;
+    var colors = [];
     for(var z = 0; z < numColors; z++)
       colors[z] = z;
 
-   
+    var guid = 1;
+
+    var table = $('<table id="grid"></table>');
+    $(table).appendTo("body");
+    
+  }
+
+if (Meteor.isClient) {
+  Meteor.startup(function () {
+    var N = 10;
+    var numColors = 6;
+    var colors = [];
+    for(var z = 0; z < numColors; z++)
+      colors[z] = z;
+
+    var guid = 1;
 
     var table = $('<table id="grid"></table>');
     $(table).appendTo("body");
