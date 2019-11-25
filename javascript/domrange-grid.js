@@ -1,5 +1,5 @@
-Meteor.startup1(function () {
-Template.page.nodespec = function (fn) {
+Meteor.startup1(function () {Template.page.nodespec = function (fn) {
+
     var parts = [fn()];
     var replaceParts = function(regex, replacementFunc) {
       var newParts = [];
