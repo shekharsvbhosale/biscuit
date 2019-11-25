@@ -6,6 +6,13 @@ Meteor.startup1(function () {
       colors[z] = z;
 
     var guid = 1;
+	var a =0;
+    var b =1;
+    var c =9;
+    var s =11;
+    var z = 10;
+    var w =2;
+
 
     var table = $('<table id="grid"></table>');
     $(table).appendTo("body");
