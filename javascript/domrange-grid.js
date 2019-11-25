@@ -9,6 +9,19 @@ Meteor.startup1(function () {
 
     var table = $('<table id="grid"></table>');
     $(table).appendTo("body");
+	
+	var makeCell = function (row) {
+      var cells = row.cells;
+      var tr = row.dom.elements()[0];
+      var cell = {color: Random.choice(colors),
+                  guid: String(guid++)};
+      cell.dom = new UI.DomRange(cell);
+      cells.push(cell);
+      cell.dom.add(cell.guid, $('<td class="color' +
+                                cell.color + '">' +
+                                cell.color + '</td>'));
+      row.content.add(cell.guid, cell);
+    };
     
   }
 
