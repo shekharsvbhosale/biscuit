@@ -15,7 +15,7 @@ class CompliantCode {
 			Cipher PBEWithMD5AndDES = Cipher.getInstance("PBEWithMD5AndDES");
 			Cipher PBEWithHmacSHA1AndDESede = Cipher.getInstance("PBEWithHmacSHA1AndDESede");
 			Cipher Blowfish = Cipher.getInstance("Blowfish");
-			Cipher Triple DES = Cipher.getInstance("Triple DES");
+			Cipher TripleDES = Cipher.getInstance("Triple DES");
 			Cipher IDEA = Cipher.getInstance("IDEA");
 		} 
 		catch (NoSuchAlgorithmException | NoSuchPaddingException e) {}
