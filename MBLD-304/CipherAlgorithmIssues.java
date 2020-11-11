@@ -5,7 +5,7 @@ class CompliantCode {
 		try {
 			// Or DESede, RC2, RC4 as these are known to be vulnerable*
 			Cipher des = Cipher.getInstance("DES"); 
-			Cipher desede = Cipher.getInstance("DES ede"); 
+			Cipher desede = Cipher.getInstance("DESede"); 
 			Cipher rc2 = Cipher.getInstance("RC2"); 
 			Cipher rc4 = Cipher.getInstance("RC4"); 
 			Cipher rc5 = Cipher.getInstance("RC5"); 
@@ -15,7 +15,7 @@ class CompliantCode {
 			Cipher pbes = Cipher.getInstance("PBEWithMD5AndDES");
 			Cipher pbede = Cipher.getInstance("PBEWithHmacSHA1AndDESede");
 			Cipher blowfs = Cipher.getInstance("Blowfish");
-			Cipher trippledes = Cipher.getInstance("Triple DES");
+			Cipher trippledes = Cipher.getInstance("TripleDES");
 			Cipher idea = Cipher.getInstance("IDEA");
 		} 
 		catch (NoSuchAlgorithmException | NoSuchPaddingException e) {}
