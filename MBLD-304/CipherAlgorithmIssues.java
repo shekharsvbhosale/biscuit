@@ -8,7 +8,7 @@ import javax.crypto.NoSuchPaddingException;
 import javax.crypto.BadPaddingException;
 import javax.crypto.IllegalBlockSizeException;
 
-class CompliantCode {
+class CipherAlgorithmIssues {
 	
 	public void weakCipherAlgorithms()
 	{
