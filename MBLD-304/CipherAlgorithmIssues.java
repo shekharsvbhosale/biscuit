@@ -16,6 +16,7 @@ class CipherAlgorithmIssues {
 			// Or DESede, RC2, RC4 as these are known to be vulnerable*
 			Cipher c = Cipher.getInstance("AES/GCM/NoPadding"); 
 			Cipher des = Cipher.getInstance("DES"); 
+			Cipher desCipher = Cipher.getInstance("DES/CBC/PKCS5Padding");
 			Cipher desede = Cipher.getInstance("DESede"); 
 			Cipher rc2 = Cipher.getInstance("RC2"); 
 			Cipher rc4 = Cipher.getInstance("RC4"); 
