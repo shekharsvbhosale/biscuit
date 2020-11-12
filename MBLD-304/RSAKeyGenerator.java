@@ -1,16 +1,12 @@
-package MBLD-304;
-
 import java.io.Writer;
 import java.io.FileWriter;
 import java.io.OutputStreamWriter;
-
 import java.security.Key;
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
-
 import java.util.Base64;
 
-public class sample1
+public class RSAKeyGenerator
 {
     static private Base64.Encoder encoder = Base64.getEncoder();
 

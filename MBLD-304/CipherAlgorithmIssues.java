@@ -29,7 +29,7 @@ class CipherAlgorithmIssues {
 			Cipher pbes = Cipher.getInstance("PBEWithMD5AndDES");
 			Cipher pbede = Cipher.getInstance("PBEWithHmacSHA1AndDESede");
 			Cipher blowfs = Cipher.getInstance("Blowfish");
-			Cipher trippledes2 = Cipher.getInstance("3DES");
+			Cipher trippledes1 = Cipher.getInstance("3DES");
 			Cipher trippledes2 = Cipher.getInstance("EDE3-DES");
 			Cipher idea = Cipher.getInstance("IDEA");
 			Cipher pgp = Cipher.getInstance("PGP");
