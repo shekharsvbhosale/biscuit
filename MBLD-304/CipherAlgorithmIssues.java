@@ -22,13 +22,21 @@ class CipherAlgorithmIssues {
 			Cipher rc4 = Cipher.getInstance("RC4"); 
 			Cipher rc5 = Cipher.getInstance("RC5"); 
 			Cipher md5 = Cipher.getInstance("MD5"); 
+			Cipher sha1 = Cipher.getInstance("SHA-1");
 			Cipher dsa = Cipher.getInstance("DSA"); 
+			Cipher sslv2 = Cipher.getInstance("SSLV2");
 			Cipher sslv3 = Cipher.getInstance("SSLV3"); 
 			Cipher pbes = Cipher.getInstance("PBEWithMD5AndDES");
 			Cipher pbede = Cipher.getInstance("PBEWithHmacSHA1AndDESede");
 			Cipher blowfs = Cipher.getInstance("Blowfish");
-			Cipher trippledes = Cipher.getInstance("TripleDES");
+			Cipher trippledes2 = Cipher.getInstance("3DES");
+			Cipher trippledes2 = Cipher.getInstance("EDE3-DES");
 			Cipher idea = Cipher.getInstance("IDEA");
+			Cipher pgp = Cipher.getInstance("PGP");
+			Cipher openpgp = Cipher.getInstance("OpenPGP");
+			Cipher gnupg = Cipher.getInstance("GnuPG");
+			Cipher dh = Cipher.getInstance("DH");
+			Cipher ecdhe = Cipher.getInstance("ECDHE");				
 		} 
 		catch (NoSuchAlgorithmException | NoSuchPaddingException e) {}
 	}
