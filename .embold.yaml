@@ -5,7 +5,7 @@ sources:
   basedir: '.'
   files:
     # Default will be all Files in the base Dir
-    - path: 'html/*'
+    - path: '/*'
     # One can specify the relative path with respect to the Base Dir
     #- path: 'org/jedit/core/JavaFileFromOtherPath.java'
   #Files to be Excluded are mentioned in exclusions as per language
@@ -26,3 +26,4 @@ sources:
     - 'library'
     - 'libs'
     - '.git'
+    - 'html'
